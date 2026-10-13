@@ -78,7 +78,8 @@ python3 subir.py ~/ruta/a/la/historia
 
 ## Limitaciones importantes
 
-- **Mientras Google no verifique tu proyecto, todo lo que suba el script queda bloqueado en privado** y no se puede hacer público después, ni siquiera a mano. Úsalo solo para probar con vídeos de prueba hasta que tengas la verificación (formulario "YouTube API Services Audit and Quota Extension Form"). Lo mismo pasa con la publicación programada: no se publicará.
+- **El proyecto no ha pasado la auditoría de YouTube.** Según Google, lo que sube un proyecto sin auditar queda bloqueado en privado. En la prueba del 13/10/2026 el vídeo subido sí se pudo hacer visible a mano desde YouTube Studio, así que el flujo actual es: **subir en privado con el script y publicar o programar a mano en Studio**. La publicación programada desde el script (`publicar`) probablemente no funcione hasta pasar la auditoría ("YouTube API Services Audit and Quota Extension Form").
+- La app de Google está "En producción" (páginas en https://pacorampas.github.io/youtubeUploader/), así que el permiso no caduca cada 7 días. Al dar permiso seguirá saliendo el aviso de "app no verificada": es normal, pulsa Continuar.
 - Para poner miniaturas personalizadas tu canal tiene que estar verificado por teléfono (https://www.youtube.com/verify).
 - En los shorts, YouTube puede no mostrar la miniatura personalizada en todas partes, aunque se suba bien.
 - Límites diarios: hasta 100 subidas por día. El cupo se renueva sobre las 9:00 (hora de Madrid).
@@ -86,5 +87,6 @@ python3 subir.py ~/ruta/a/la/historia
 ## Archivos
 
 - `subir.py`: el script.
+- `INSTRUCCIONES_IA.md`: instrucciones para que una IA sepa usar la herramienta.
 - `client_secret.json` y `token.json`: tus credenciales. **No los compartas con nadie.**
 - `ejemplo/`: plantilla de `publicacion.json` y de descripción.

@@ -71,7 +71,8 @@ Reglas:
 
 ## Limitaciones que hay que tener presentes
 
-- **Proyecto sin verificar por Google = vídeos bloqueados en privado para siempre** (ni la programación ni el paso manual a público funcionan). Antes de subir vídeos reales, pregunta a Francisco si ya le han aprobado la verificación ("YouTube API Services Audit"). Si no, solo pruebas, o súbelos de otra forma (YouTube Studio).
+- **Proyecto sin auditoría de YouTube.** Según Google, los vídeos subidos quedarían bloqueados en privado; en la prueba del 13/10/2026 el vídeo SÍ se pudo hacer visible a mano en YouTube Studio. Flujo actual: subir sin `publicar` (privado) y que Francisco publique o programe a mano en Studio. No uses `publicar` salvo que él confirme que ya pasó la auditoría. Si alguna vez un vídeo aparece "bloqueado", avísale: habría que pedir la auditoría.
+- La app OAuth está "En producción" (páginas en https://pacorampas.github.io/youtubeUploader/, repo github.com/pacorampas/youtubeUploader, público). El token no caduca a los 7 días; el aviso de "app no verificada" al dar permiso es normal.
 - Miniaturas personalizadas: el canal debe estar verificado por teléfono. Si falla con 403, avísale; el script lo reintenta en la siguiente ejecución.
 - `quotaExceeded`: cupo diario de la API agotado; se renueva hacia las 9:00 de Madrid. `uploadLimitExceeded`: límite diario de subidas del canal.
 - `invalid_grant` o errores de token: borra `token.json` y que él vuelva a ejecutar en su Mac para dar permiso de nuevo.
