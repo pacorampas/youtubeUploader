@@ -1,0 +1,17 @@
+# Credenciales: NUNCA subir
+client_secret*.json
+token.json
+
+# Entornos de Python
+.venv/
+.venv-linux/
+__pycache__/
+*.pyc
+
+# Vídeos, pruebas y registros de subida
+prueba/
+subidos.json
+*.mp4
+*.mov
+*.tmp
+.DS_Store

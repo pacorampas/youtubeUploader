@@ -1,0 +1,43 @@
+{
+  "comun": {
+    "etiquetas": ["relatos", "historias", "relatos narrados", "historias en español"],
+    "categoria": "24",
+    "idioma": "es",
+    "privacidad": "private",
+    "contenido_sintetico": true,
+    "para_ninos": false,
+    "lista_reproduccion": "Relatos"
+  },
+  "videos": [
+    {
+      "tipo": "video",
+      "archivo": "video.mp4",
+      "miniatura": "miniatura.jpg",
+      "titulo": "El faro que nadie encendía | Relato narrado",
+      "descripcion_archivo": "descripcion.txt",
+      "publicar": "2026-10-20 18:00"
+    },
+    {
+      "tipo": "short",
+      "archivo": "short1.mp4",
+      "miniatura": "short1.jpg",
+      "titulo": "Nadie encendía el faro… hasta esa noche #shorts",
+      "descripcion": "Historia completa aquí 👉 {enlace_video}\n\n#relatos #historias",
+      "publicar": "2026-10-21 14:00"
+    },
+    {
+      "tipo": "short",
+      "archivo": "short2.mp4",
+      "titulo": "La luz volvió a girar #shorts",
+      "descripcion": "Historia completa aquí 👉 {enlace_video}",
+      "publicar": "2026-10-22 14:00"
+    },
+    {
+      "tipo": "short",
+      "archivo": "short3.mp4",
+      "titulo": "Lo que vio desde lo alto #shorts",
+      "descripcion": "Historia completa aquí 👉 {enlace_video}",
+      "publicar": "2026-10-23 14:00"
+    }
+  ]
+}
